@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>FEC Proxy</title>
+  </head>
+  <body>
+    <div id="Photogallery"></div>
+    <div id="Reservations"></div>
+    <div id="Reviews"></div>
+    <div id="Places"></div>
+<!-- These two lines are just one way to get the React library running in the client's browser -->
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3000/app.js"></script>
+    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      ReactDOM.render(
+        React.createElement(Photogallery),
+        document.getElementById('Photogallery')
+      );
+      ReactDOM.render(
+        React.createElement(Reservations),
+        document.getElementById('Reservations')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
+      );
+      ReactDOM.render(
+        React.createElement(Places),
+        document.getElementById('Places')
+      );
+    </script>
+  </body>
+</html>
