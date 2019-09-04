@@ -1,7 +1,16 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 
+const PORT = 3000;
 const app = express();
-const PORT = 8000;
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.resolve(__dirname, '../public')));
+
+// app.get('/api/proxy', (req, res) => {
+//   res.send(console.log('hello, the get request went through'));
+// });
+
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);

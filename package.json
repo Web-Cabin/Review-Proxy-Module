@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+    "scripts": {
+    "server": "nodemon ./proxy/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,17 @@
     "url": "https://github.com/Web-Cabin/Review-Proxy-Module/issues"
   },
   "homepage": "https://github.com/Web-Cabin/Review-Proxy-Module#readme",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^4.0.0",
+    "node-env-run": "^3.0.2",
+    "nodemon": "^1.19.2",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^1.4.5"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
