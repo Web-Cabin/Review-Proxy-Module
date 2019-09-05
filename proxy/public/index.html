@@ -4,38 +4,25 @@
     <meta charset="UTF-8">
 
     <title>FEC Proxy</title>
-    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
   </head>
   <body>
     <div id="photogallery"></div>
-    <!-- <div id="Reservations"></div> -->
+    <div id="Reservations"></div>
     <div id="Reviews"></div>
-    <!-- <div id="Places"></div> -->
-<!-- These two lines are just one way to get the React library running in the client's browser -->
+    <div id="Places"></div>
     <script src="http://localhost:3000/bundle.js"></script>
-    <!-- <script src="http://localhost:3001/app.js"></script> -->
+    <script src="http://localhost:3001/app.js"></script>
     <script src="http://localhost:3002/bundle.js"></script>
-    <!-- <script src="http://localhost:3003/app.js"></script> -->
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script src="http://localhost:3003/bundle.js"></script>
     <script>
-      // ReactDOM.render(
-      //   React.createElement(Photogallery),
-      //   document.getElementById('Photogallery')
-      // );
-      // ReactDOM.render(
-      //   React.createElement(Reservations),
-      //   document.getElementById('Reservations')
-      // );
-      // console.log(Reviews);
-      // ReactDOM.render(
-      //   React.createElement(Reviews.default),
-      //   document.getElementById('Reviews')
-      // );
-      // ReactDOM.render(
-      //   React.createElement(Places),
-      //   document.getElementById('Places')
-      // );
+      // const id = window.location.pathname.substring(url.lastIndexOf('/') + 1);
+      ReactDOM.render(
+        React.createElement(Reviews.default), // { id }
+        document.getElementById('Reviews')
+      );
     </script>
   </body>
 </html>
